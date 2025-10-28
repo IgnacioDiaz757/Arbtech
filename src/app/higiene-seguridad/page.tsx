@@ -128,7 +128,7 @@ export default function HigieneSeguridadPage() {
       </div>
 
       {/* CTA Section */}
-      <div className="rounded-xl p-8 md:p-12 bg-gradient-to-r from-blue-800 to-gray-700 text-white text-center space-y-6">
+      <div className="rounded-xl p-8 md:p-12 bg-[#003B0C] border-2 border-[#003B0C] shadow-[0_0_30px_rgba(0,59,12,0.4)] text-white text-center space-y-6">
         <h2 className="text-3xl md:text-4xl font-semibold">¿Necesitas proteger tu empresa?</h2>
         <p className="text-white/90 max-w-2xl mx-auto text-lg">
           Desarrollamos estrategias de higiene y seguridad personalizadas que cumplen 
@@ -137,17 +137,15 @@ export default function HigieneSeguridadPage() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a 
             href="/contacto" 
-            className="inline-flex items-center justify-center rounded-md bg-white text-black px-8 py-4 text-lg font-semibold hover:bg-gray-100 transition-colors"
-            style={{ color: '#000000' }}
+            className="inline-flex items-center justify-center rounded-md border-2 border-white text-white px-8 py-4 text-lg font-semibold hover:bg-white/10 hover:shadow-[0_0_15px_rgba(255,255,255,0.2)] transition-all"
           >
             Consultar plan de seguridad
           </a>
           <a 
-            href="/portfolio" 
-            className="inline-flex items-center justify-center rounded-md border border-white/50 px-8 py-4 text-lg font-semibold hover:bg-white/20 transition-colors"
-            style={{ color: '#000000' }}
+            href="/contacto" 
+            className="inline-flex items-center justify-center rounded-md border-2 border-white text-white px-8 py-4 text-lg font-semibold hover:bg-white/10 hover:shadow-[0_0_15px_rgba(255,255,255,0.2)] transition-all"
           >
-            Ver casos de éxito
+            Contratanos
           </a>
         </div>
       </div>

@@ -55,51 +55,51 @@ export default function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4 rounded-lg border border-foreground/10 p-6 bg-background">
+    <form onSubmit={handleSubmit} className="space-y-4 rounded-lg border border-[#003B0C] p-6 bg-background hover:border-[#003B0C] hover:shadow-[0_0_15px_#003B0C] transition-all duration-200">
       <div className="grid gap-4 sm:grid-cols-2">
         <label className="grid gap-1 text-sm">
-          <span>Nombre *</span>
+          <span className="text-white">Nombre *</span>
           <input
             name="name"
             type="text"
             value={formData.name}
             onChange={handleChange}
-            className="px-3 py-2 rounded-md border border-foreground/15 bg-background"
+            className="px-3 py-2 rounded-md border border-[#003B0C] bg-background text-white focus:border-[#003B0C] focus:outline-none focus:ring-2 focus:ring-[#003B0C]"
             placeholder="Tu nombre"
             required
           />
         </label>
         <label className="grid gap-1 text-sm">
-          <span>Email *</span>
+          <span className="text-white">Email *</span>
           <input
             name="email"
             type="email"
             value={formData.email}
             onChange={handleChange}
-            className="px-3 py-2 rounded-md border border-foreground/15 bg-background"
+            className="px-3 py-2 rounded-md border border-[#003B0C] bg-background text-white focus:border-[#003B0C] focus:outline-none focus:ring-2 focus:ring-[#003B0C]"
             placeholder="tu@email.com"
             required
           />
         </label>
       </div>
       <label className="grid gap-1 text-sm">
-        <span>Teléfono</span>
+        <span className="text-white">Teléfono</span>
         <input
           name="phone"
           type="tel"
           value={formData.phone}
           onChange={handleChange}
-          className="px-3 py-2 rounded-md border border-foreground/15 bg-background"
+          className="px-3 py-2 rounded-md border border-[#003B0C] bg-background text-white focus:border-[#003B0C] focus:outline-none focus:ring-2 focus:ring-[#003B0C]"
           placeholder="+54 9 351 123-4567"
         />
       </label>
       <label className="grid gap-1 text-sm">
-        <span>Mensaje *</span>
+        <span className="text-white">Mensaje *</span>
         <textarea
           name="message"
           value={formData.message}
           onChange={handleChange}
-          className="px-3 py-2 rounded-md border border-foreground/15 bg-background min-h-32"
+          className="px-3 py-2 rounded-md border border-[#003B0C] bg-background min-h-32 text-white focus:border-[#003B0C] focus:outline-none focus:ring-2 focus:ring-[#003B0C]"
           placeholder="Contanos sobre tu proyecto"
           required
         />
@@ -120,7 +120,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={isSubmitting}
-        className="inline-flex items-center justify-center rounded-md border border-foreground/15 px-4 py-2 text-sm font-medium hover:bg-foreground/5 disabled:opacity-50 disabled:cursor-not-allowed"
+        className="inline-flex items-center justify-center rounded-md bg-[#003B0C] border border-[#003B0C] text-white px-4 py-2 text-sm font-medium hover:bg-[#003B0C] hover:shadow-[0_0_15px_#003B0C] disabled:opacity-50 disabled:cursor-not-allowed transition-all"
       >
         {isSubmitting ? "Enviando..." : "Enviar mensaje"}
       </button>

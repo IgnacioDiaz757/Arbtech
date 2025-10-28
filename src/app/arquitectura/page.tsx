@@ -86,12 +86,12 @@ export default function ArquitecturaPage() {
         <h2 className="text-3xl font-semibold text-white text-center">Nuestros Servicios</h2>
         <div className="grid gap-8 md:grid-cols-2">
           {services.map((service, index) => (
-            <div key={index} className="rounded-xl border border-white/20 bg-black text-white p-8 hover:border-white/40 transition-colors">
+            <div key={index} className="rounded-xl border border-[#003B0C] bg-black text-white p-8 hover:border-[#003B0C] hover:shadow-[0_0_15px_#003B0C] transition-all duration-200">
               <h3 className="text-xl font-semibold mb-4">{service.title}</h3>
               <p className="text-white/80 mb-6">{service.description}</p>
               <div className="flex flex-wrap gap-2">
                 {service.features.map((feature, idx) => (
-                  <span key={idx} className="px-3 py-1 rounded-full border border-white/20 text-xs text-white/80">
+                  <span key={idx} className="px-3 py-1 rounded-full border border-[#003B0C] text-xs text-white/80">
                     {feature}
                   </span>
                 ))}
@@ -138,7 +138,7 @@ export default function ArquitecturaPage() {
       </div>
 
       {/* CTA Section */}
-      <div className="rounded-xl p-8 md:p-12 bg-gradient-to-r from-blue-800 to-gray-700 text-white text-center space-y-6">
+      <div className="rounded-xl p-8 md:p-12 bg-[#003B0C] border-2 border-[#003B0C] shadow-[0_0_30px_rgba(0,59,12,0.4)] text-white text-center space-y-6">
         <h2 className="text-3xl md:text-4xl font-semibold">¿Tienes un proyecto en mente?</h2>
         <p className="text-white/90 max-w-2xl mx-auto text-lg">
           Conversemos sobre tu proyecto arquitectónico. Desde la idea inicial hasta 
@@ -147,15 +147,13 @@ export default function ArquitecturaPage() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a 
             href="/contacto" 
-            className="inline-flex items-center justify-center rounded-md bg-white text-black px-8 py-4 text-lg font-semibold hover:bg-gray-100 transition-colors"
-            style={{ color: '#000000' }}
+            className="inline-flex items-center justify-center rounded-md border-2 border-white text-white px-8 py-4 text-lg font-semibold hover:bg-white/10 hover:shadow-[0_0_15px_rgba(255,255,255,0.2)] transition-all"
           >
             Consultar proyecto
           </a>
           <a 
             href="/portfolio" 
-            className="inline-flex items-center justify-center rounded-md border border-white/50 text-black px-8 py-4 text-lg font-semibold hover:bg-white/20 transition-colors"
-            style={{ color: '#000000' }}
+            className="inline-flex items-center justify-center rounded-md border-2 border-white text-white px-8 py-4 text-lg font-semibold hover:bg-white/10 hover:shadow-[0_0_15px_rgba(255,255,255,0.2)] transition-all"
           >
             Ver más proyectos
           </a>

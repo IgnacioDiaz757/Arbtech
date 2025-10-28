@@ -87,12 +87,12 @@ export default function ProgramacionPage() {
         <h2 className="text-3xl font-semibold text-white text-center">Nuestros Servicios</h2>
         <div className="grid gap-8 md:grid-cols-2">
           {services.map((service, index) => (
-            <div key={index} className="rounded-xl border border-white/20 bg-black text-white p-8 hover:border-white/40 transition-colors">
+            <div key={index} className="rounded-xl border border-[#003B0C] bg-black text-white p-8 hover:border-[#003B0C] hover:shadow-[0_0_15px_#003B0C] transition-all duration-200">
               <h3 className="text-xl font-semibold mb-4">{service.title}</h3>
               <p className="text-white/80 mb-6">{service.description}</p>
               <div className="flex flex-wrap gap-2">
                 {service.features.map((feature, idx) => (
-                  <span key={idx} className="px-3 py-1 rounded-full border border-white/20 text-xs text-white/80">
+                  <span key={idx} className="px-3 py-1 rounded-full border border-[#003B0C] text-xs text-white/80">
                     {feature}
                   </span>
                 ))}

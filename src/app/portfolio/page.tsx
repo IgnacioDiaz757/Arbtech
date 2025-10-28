@@ -53,13 +53,13 @@ export default function PortfolioPage() {
           <a
             key={category.key}
             href={category.href}
-            className="group relative overflow-hidden rounded-xl border border-white/20 bg-black text-white p-8 transition-all duration-300 hover:scale-105 hover:border-white/40"
+            className="group relative overflow-hidden rounded-xl border border-[#003B0C] bg-black text-white p-8 transition-all duration-300 hover:scale-105 hover:border-[#003B0C] hover:shadow-[0_0_15px_#003B0C]"
           >
             <div className="space-y-4">
               <div className="text-5xl mb-4">{category.icon}</div>
               <h3 className="text-2xl font-semibold">{category.label}</h3>
               <p className="text-white/70 text-sm">{category.description}</p>
-              <div className="flex items-center text-blue-400 group-hover:text-blue-300 transition-colors">
+              <div className="flex items-center text-white group-hover:text-white/80 transition-colors">
                 <span className="text-sm font-medium">Ver proyectos →</span>
               </div>
             </div>

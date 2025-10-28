@@ -18,10 +18,10 @@ export default function Home() {
             digital para entregar resultados medibles y estéticos.
           </p>
           <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
-            <a href="/contacto" className="inline-flex items-center justify-center rounded-md border border-white/10 bg-black text-white px-5 py-3 sm:px-6 sm:py-3.5 text-sm sm:text-base font-medium hover:bg-white/30 hover:border-white/30 transition-colors">
+            <a href="/contacto" className="inline-flex items-center justify-center rounded-md border border-[#003B0C] bg-[#003B0C] text-white px-5 py-3 sm:px-6 sm:py-3.5 text-sm sm:text-base font-medium hover:bg-[#003B0C] hover:shadow-[0_0_15px_#003B0C] transition-all">
               Empezar un proyecto
             </a>
-            <a href="/servicios" className="inline-flex items-center justify-center rounded-md border border-white/30 px-5 py-3 sm:px-6 sm:py-3.5 text-sm sm:text-base font-medium hover:bg-white/10 hover:border-white/50 transition-colors">
+            <a href="/servicios" className="inline-flex items-center justify-center rounded-md border border-[#003B0C] px-5 py-3 sm:px-6 sm:py-3.5 text-sm sm:text-base font-medium hover:bg-[#003B0C]/10 hover:shadow-[0_0_15px_#003B0C] transition-all">
               Ver servicios
             </a>
           </div>
@@ -77,7 +77,7 @@ export default function Home() {
             href="/marketing"
           />
           <HighlightedService
-            title="Automatización"
+            title="Programación & Automatización"
             description="Sistemas inteligentes que optimizan procesos y mejoran la eficiencia de tu negocio."
             icon="⚡"
             index={2}

@@ -27,15 +27,15 @@ export default function NosotrosPage() {
           },
           {
             name: "Bruno",
-            role: "Marketing Digital & Automatización",
+            role: "Maestro Mayor de Obras",
             desc:
-              "Marketing digital y automatización de procesos para hacer crecer tu negocio. Sistemas que optimizan y escalan tu operación.",
+              "Maestro Mayor de Obras con experiencia en construcción y diseño. Realiza planos con AutoCAD, aberturas a medida y diseños personalizados para proyectos arquitectónicos.",
           },
           {
             name: "Tobías",
-            role: "Marketing Digital & Crecimiento",
+            role: "Marketing Digital & Anuncios",
             desc:
-              "Especialista en marketing digital y crecimiento de negocios. Diseño estrategias personalizadas que generan resultados medibles y escalables.",
+              "Especialista en marketing digital, anuncios publicitarios y potenciación de negocios y empresas. Diseño estrategias personalizadas que generan resultados medibles y escalables para hacer crecer tu empresa.",
           },
         ].map((p, index) => (
           <AnimatedProfileCard

@@ -29,7 +29,7 @@ export default function HighlightedService({ title, description, icon, index, hr
       <div className="text-4xl mb-4">{icon}</div>
       <h3 className="text-xl md:text-2xl font-semibold mb-3">{title}</h3>
       <p className="text-sm md:text-base text-white/80 mb-4">{description}</p>
-      <div className="inline-flex items-center text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors">
+      <div className="inline-flex items-center text-sm font-medium text-white hover:text-white/80 transition-colors">
         Ver más →
       </div>
     </motion.div>
