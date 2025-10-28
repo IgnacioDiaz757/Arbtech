@@ -10,8 +10,8 @@ export default function ProgramacionPage() {
   const services = [
     {
       title: "Desarrollo Web",
-      description: "Aplicaciones web modernas, APIs robustas y sistemas escalables. Tecnologías como React, Node.js, Python y bases de datos.",
-      features: ["React/Next.js", "Node.js", "Python/Django", "APIs REST"]
+      description: "Aplicaciones web modernas, APIs robustas y sistemas escalables. Tecnologías como React, Node.js, Typescript y bases de datos.",
+      features: ["React/Next.js", "Node.js", "APIs REST"]
     },
     {
       title: "Automatización de Procesos",

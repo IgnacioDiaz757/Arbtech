@@ -13,23 +13,29 @@ export default function NosotrosPage() {
       <header className="space-y-2">
         <h1 className="text-3xl font-semibold tracking-tight">Nosotros</h1>
         <p className="text-foreground/70 max-w-2xl">
-        “Formamos un equipo multidisciplinario, combinando creatividad, conocimiento técnico y enfoque digital, para ofrecer soluciones que generan resultados concretos.”
+        "Formamos un equipo multidisciplinario, combinando creatividad, conocimiento técnico y enfoque digital, para ofrecer soluciones que generan resultados concretos."
         </p>
       </header>
 
-      <div className="grid gap-8 sm:grid-cols-2">
+      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {[
           {
             name: "Ignacio",
-            role: "Web Developer, Marketing, Content Manager",
+            role: "Programación & Automatización",
             desc:
-              "Soy un profesional especializado en desarrollo web, marketing y gestión de contenido. Combino creatividad, conocimiento técnico y estrategias digitales para crear sitios atractivos, campañas efectivas y contenido de calidad que generan resultados reales.",
+              "Programador especializado en automatización de servicios, desarrollo web y creación de páginas web. Diseño, dronista y creador de contenido con enfoque en soluciones tecnológicas innovadoras.",
           },
           {
             name: "Bruno",
-            role: "Automatización · Marketing",
+            role: "Marketing Digital & Automatización",
             desc:
-              "Sistemas a medida, automatización de procesos y estrategia digital para captación de clientes.",
+              "Marketing digital y automatización de procesos para hacer crecer tu negocio. Sistemas que optimizan y escalan tu operación.",
+          },
+          {
+            name: "Tobías",
+            role: "Marketing Digital & Crecimiento",
+            desc:
+              "Especialista en marketing digital y crecimiento de negocios. Diseño estrategias personalizadas que generan resultados medibles y escalables.",
           },
         ].map((p, index) => (
           <AnimatedProfileCard
@@ -37,7 +43,7 @@ export default function NosotrosPage() {
             name={p.name}
             role={p.role}
             description={p.desc}
-            imageSrc={p.name === "Ignacio" ? "/ignacio.jpeg" : "/bruno.jpg"}
+            imageSrc={p.name === "Ignacio" ? "/ignacio.jpeg" : p.name === "Bruno" ? "/bruno.jpg" : "/tobias.jpg"}
             index={index}
           />
         ))}
