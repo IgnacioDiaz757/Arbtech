@@ -28,7 +28,7 @@ export default function AnimatedProfileCard({
         scale: 1.02,
         transition: { duration: 0.2 }
       }}
-      className="group overflow-hidden rounded-xl border border-white/20 bg-black text-white transition-all duration-200 hover:shadow-xl hover:border-white/40"
+      className="group overflow-hidden rounded-xl border border-[#003B0C] bg-black text-white transition-all duration-200 hover:shadow-xl hover:shadow-[#003B0C] hover:border-[#003B0C]"
     >
       <div className="relative aspect-[4/3] w-full overflow-hidden">
         <img
@@ -47,9 +47,9 @@ export default function AnimatedProfileCard({
         <p className="text-sm md:text-base text-white/80 mt-1">{role}</p>
         <p className="text-sm md:text-base text-white/80 mt-3">{description}</p>
         <div className="mt-4 flex flex-wrap gap-2">
-          <span className="rounded-full border border-white/20 px-3 py-1 text-xs text-white/80">Compromiso</span>
-          <span className="rounded-full border border-white/20 px-3 py-1 text-xs text-white/80">Calidad</span>
-          <span className="rounded-full border border-white/20 px-3 py-1 text-xs text-white/80">Eficiencia</span>
+          <span className="rounded-full border border-[#003B0C] px-3 py-1 text-xs text-white/80">Compromiso</span>
+          <span className="rounded-full border border-[#003B0C] px-3 py-1 text-xs text-white/80">Calidad</span>
+          <span className="rounded-full border border-[#003B0C] px-3 py-1 text-xs text-white/80">Eficiencia</span>
         </div>
       </div>
     </motion.article>

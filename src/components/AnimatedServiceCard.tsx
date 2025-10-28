@@ -20,7 +20,10 @@ export default function AnimatedServiceCard({ title, description, index, href }:
         scale: 1.02,
         transition: { duration: 0.2 }
       }}
-      className="rounded-xl border border-white/20 bg-black text-white p-8 md:p-10 transition-all duration-200 hover:shadow-xl hover:border-white/40"
+      className="rounded-xl border border-white/20 bg-black text-white p-8 md:p-10 transition-all duration-200 hover:shadow-xl hover:shadow-[#003B0C] hover:border-[#003B0C]"
+      style={{
+        boxShadow: 'none'
+      }}
     >
       <motion.h3 
         className="text-xl md:text-2xl font-semibold"

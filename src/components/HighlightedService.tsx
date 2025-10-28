@@ -21,7 +21,10 @@ export default function HighlightedService({ title, description, icon, index, hr
         scale: 1.02,
         transition: { duration: 0.2 }
       }}
-      className="rounded-xl border border-white/20 bg-black text-white p-6 md:p-8 transition-all duration-200 hover:shadow-xl hover:border-white/40"
+      className="rounded-xl border border-white/20 bg-black text-white p-6 md:p-8 transition-all duration-200 hover:shadow-xl hover:shadow-[#003B0C] hover:border-[#003B0C]"
+      style={{
+        boxShadow: 'none'
+      }}
     >
       <div className="text-4xl mb-4">{icon}</div>
       <h3 className="text-xl md:text-2xl font-semibold mb-3">{title}</h3>

@@ -44,10 +44,10 @@ export default function ProgramacionPage() {
       images: ["/almeria/almeriaespañaarb.png", "/almeria/almeriaarb3.png", "/almeria/almeriaespañaarb2.png"]
     },
     { 
-      src: "/arbtech-logo.png", 
-      alt: "Dashboard Analytics", 
-      category: "Frontend",
-      images: ["/arbtech-logo.png", "/arbtech-logo.png", "/arbtech-logo.png"]
+      src: "/riverasgestion/sistemawebriverasdelsuquia.png", 
+      alt: "Sistema Web Gestión Riveras Del Suquía", 
+      category: "Sistema de Gestión",
+      images: ["/riverasgestion/sistemawebriverasgestion.png", "/riverasgestion/sistemawebriverasdelsuquia.png", "/riverasgestion/paneladminriveraswebgestion.png"]
     },
     { 
       src: "/arbtech-logo.png", 
@@ -70,19 +70,20 @@ export default function ProgramacionPage() {
   ];
 
   return (
-    <section className="space-y-16">
+    <div className="bg-black -ml-6 -mr-6 -mt-8 -mb-8 pl-6 pr-6 pt-8 pb-8">
+      <div className="space-y-16 max-w-6xl mx-auto">
       {/* Hero Section */}
-      <div className="text-center space-y-6">
-        <h1 className="text-4xl md:text-5xl font-semibold text-white">Programación & Automatización</h1>
-        <p className="text-white/70 max-w-3xl mx-auto text-lg">
-          Desarrollamos soluciones tecnológicas que transforman la forma en que trabajas. 
-          Desde aplicaciones web hasta sistemas de automatización que optimizan procesos 
-          y maximizan la eficiencia de tu negocio.
-        </p>
-      </div>
+      <div className="text-center space-y-6 max-w-6xl mx-auto">
+          <h1 className="text-4xl md:text-5xl font-semibold text-white">Programación & Automatización</h1>
+          <p className="text-white/70 max-w-3xl mx-auto text-lg">
+            Desarrollamos soluciones tecnológicas que transforman la forma en que trabajas. 
+            Desde aplicaciones web hasta sistemas de automatización que optimizan procesos 
+            y maximizan la eficiencia de tu negocio.
+          </p>
+        </div>
 
       {/* Servicios */}
-      <div className="space-y-12">
+      <div className="space-y-12 max-w-6xl mx-auto">
         <h2 className="text-3xl font-semibold text-white text-center">Nuestros Servicios</h2>
         <div className="grid gap-8 md:grid-cols-2">
           {services.map((service, index) => (
@@ -102,7 +103,7 @@ export default function ProgramacionPage() {
       </div>
 
       {/* Galería de Proyectos */}
-      <div className="space-y-8">
+      <div className="space-y-8 max-w-6xl mx-auto">
         <div className="text-center space-y-4">
           <h2 className="text-3xl font-semibold text-white">Proyectos de Programación</h2>
           <p className="text-white/70 max-w-2xl mx-auto">
@@ -139,7 +140,8 @@ export default function ProgramacionPage() {
       </div>
 
       {/* CTA Section */}
-      <div className="rounded-xl p-8 md:p-12 bg-gradient-to-r from-blue-800 to-gray-700 text-white text-center space-y-6">
+      <div className="max-w-6xl mx-auto">
+      <div className="rounded-xl p-8 md:p-12 bg-[#003B0C] text-white text-center space-y-6 shadow-[0_0_30px_rgba(0,59,12,0.4)]">
         <h2 className="text-3xl md:text-4xl font-semibold">¿Necesitas una solución tecnológica?</h2>
         <p className="text-white/90 max-w-2xl mx-auto text-lg">
           Desarrollamos software personalizado que se adapta a las necesidades 
@@ -148,20 +150,20 @@ export default function ProgramacionPage() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a 
             href="/contacto" 
-            className="inline-flex items-center justify-center rounded-md bg-white text-black px-8 py-4 text-lg font-semibold hover:bg-gray-100 transition-colors"
-            style={{ color: '#000000' }}
+            className="inline-flex items-center justify-center rounded-md border-2 border-white text-white px-8 py-4 text-lg font-semibold hover:bg-white/10 hover:shadow-[0_0_15px_rgba(255,255,255,0.2)] transition-all"
           >
             Consultar proyecto
           </a>
           <a 
             href="/portfolio" 
-            className="inline-flex items-center justify-center rounded-md border border-white/50 px-8 py-4 text-lg font-semibold hover:bg-white/20 transition-colors"
-            style={{ color: '#000000' }}
+            className="inline-flex items-center justify-center rounded-md border-2 border-white text-white px-8 py-4 text-lg font-semibold hover:bg-white/10 hover:shadow-[0_0_15px_rgba(255,255,255,0.2)] transition-all"
           >
             Ver desarrollos
           </a>
         </div>
       </div>
-    </section>
+      </div>
+      </div>
+    </div>
   );
 }

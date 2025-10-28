@@ -41,14 +41,14 @@ export default function Home() {
           </div>
         </div>
         <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl border border-black/15 bg-white">
-          <Image
+        <Image
             src="/arbtech-logo.png"
             alt="Ilustración ArbTech"
             fill
             sizes="(max-width: 1024px) 100vw, 50vw"
             className="object-contain p-8"
-            priority
-          />
+          priority
+        />
         </div>
       </section>
 
@@ -87,7 +87,7 @@ export default function Home() {
       </section>
 
       {/* CTA Final */}
-      <section className="rounded-xl p-6 sm:p-8 md:p-12 lg:p-16 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 border-2 border-blue-400 shadow-2xl text-white text-center space-y-4 sm:space-y-6 md:space-y-8">
+      <section className="rounded-xl p-6 sm:p-8 md:p-12 lg:p-16 bg-[#003B0C] border-2 border-[#003B0C] shadow-[0_0_30px_rgba(0,59,12,0.4)] text-white text-center space-y-4 sm:space-y-6 md:space-y-8">
         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight px-2">
           ¿Listo para comenzar tu proyecto?
         </h2>
@@ -97,13 +97,13 @@ export default function Home() {
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6 justify-center items-center px-4">
           <a 
             href="/contacto" 
-            className="inline-flex items-center justify-center rounded-xl bg-blue-900 border-2 border-blue-300 text-white px-6 py-4 sm:px-8 sm:py-5 md:px-10 md:py-6 text-lg sm:text-xl md:text-2xl font-bold hover:bg-blue-800 hover:border-white hover:scale-105 transition-all duration-200 shadow-lg w-full sm:w-auto min-w-[200px] sm:min-w-[250px]"
+            className="inline-flex items-center justify-center rounded-xl border-2 border-white text-white px-6 py-4 sm:px-8 sm:py-5 md:px-10 md:py-6 text-lg sm:text-xl md:text-2xl font-bold hover:bg-white/10 hover:shadow-[0_0_15px_rgba(255,255,255,0.2)] hover:scale-105 transition-all duration-200 w-full sm:w-auto min-w-[200px] sm:min-w-[250px]"
           >
             Contactar ahora
           </a>
           <a 
             href="/portfolio" 
-            className="inline-flex items-center justify-center rounded-xl bg-blue-900 border-2 border-blue-300 text-white px-6 py-4 sm:px-8 sm:py-5 md:px-10 md:py-6 text-lg sm:text-xl md:text-2xl font-bold hover:bg-blue-800 hover:border-white hover:scale-105 transition-all duration-200 shadow-lg w-full sm:w-auto min-w-[200px] sm:min-w-[250px]"
+            className="inline-flex items-center justify-center rounded-xl border-2 border-white text-white px-6 py-4 sm:px-8 sm:py-5 md:px-10 md:py-6 text-lg sm:text-xl md:text-2xl font-bold hover:bg-white/10 hover:shadow-[0_0_15px_rgba(255,255,255,0.2)] hover:scale-105 transition-all duration-200 w-full sm:w-auto min-w-[200px] sm:min-w-[250px]"
           >
             Ver nuestro trabajo
           </a>

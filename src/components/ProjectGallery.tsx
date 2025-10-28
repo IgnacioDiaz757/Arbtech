@@ -61,7 +61,7 @@ export default function ProjectGallery({ projects }: ProjectGalleryProps) {
             
             {/* Imagen principal */}
             <figure
-              className="relative aspect-[4/3] overflow-hidden rounded-lg border border-white/20 bg-black group cursor-pointer"
+              className="relative aspect-[4/3] overflow-hidden rounded-lg border border-[#003B0C] bg-black group cursor-pointer hover:shadow-lg hover:shadow-[#003B0C]"
               onClick={() => openModal(project, 0)}
             >
               <Image
@@ -81,7 +81,7 @@ export default function ProjectGallery({ projects }: ProjectGalleryProps) {
               {project.images.slice(1).map((image, imgIndex) => (
                 <figure
                   key={imgIndex}
-                  className="relative aspect-[4/3] w-16 overflow-hidden rounded border border-white/20 bg-black cursor-pointer"
+                  className="relative aspect-[4/3] w-16 overflow-hidden rounded border border-[#003B0C] bg-black cursor-pointer hover:shadow-md hover:shadow-[#003B0C]"
                   onClick={() => openModal(project, imgIndex + 1)}
                 >
                   <Image
