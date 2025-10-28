@@ -53,6 +53,12 @@ export default function ProjectGallery({ projects }: ProjectGalleryProps) {
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, index) => (
           <div key={index} className="space-y-2">
+            {/* Título del proyecto */}
+            <div className="text-center mb-2">
+              <h3 className="text-base sm:text-lg font-semibold text-white">{project.alt}</h3>
+              <p className="text-xs sm:text-sm text-white/70">{project.category}</p>
+            </div>
+            
             {/* Imagen principal */}
             <figure
               className="relative aspect-[4/3] overflow-hidden rounded-lg border border-white/20 bg-black group cursor-pointer"
@@ -65,12 +71,8 @@ export default function ProjectGallery({ projects }: ProjectGalleryProps) {
                 sizes="(max-width: 768px) 100vw, 33vw"
                 className="object-cover transition-transform duration-300 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-black/50 flex items-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="text-white">
-                  <h3 className="text-lg font-semibold">{project.alt}</h3>
-                  <p className="text-sm text-white/80">{project.category}</p>
-                  <p className="text-xs text-white/60 mt-1">Haz clic para ver galería</p>
-                </div>
+              <div className="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <p className="text-white text-sm font-medium">Haz clic para ver galería</p>
               </div>
             </figure>
 

@@ -32,16 +32,16 @@ export default function ProgramacionPage() {
 
   const projects = [
     { 
-      src: "/arbtech-logo.png", 
-      alt: "Sistema CRM", 
-      category: "Desarrollo",
-      images: ["/arbtech-logo.png", "/arbtech-logo.png", "/arbtech-logo.png"]
+      src: "/registroasociado.png", 
+      alt: "Sistema de Gestión Viveros Unidos", 
+      category: "Sistema de Gestión",
+      images: ["/Programacionweb/registroasociado.png", "/Programacionweb/sistemagestionassociados.png", "/Programacionweb/viverossistema.png"]
     },
     { 
-      src: "/arbtech-logo.png", 
-      alt: "E-commerce API", 
-      category: "Backend",
-      images: ["/arbtech-logo.png", "/arbtech-logo.png", "/arbtech-logo.png"]
+      src: "/almeriaespañaarb.png", 
+      alt: "Pagina Web Almeria", 
+      category: "Plataforma Web de Contacto",
+      images: ["/almeria/almeriaespañaarb.png", "/almeria/almeriaarb3.png", "/almeria/almeriaespañaarb2.png"]
     },
     { 
       src: "/arbtech-logo.png", 

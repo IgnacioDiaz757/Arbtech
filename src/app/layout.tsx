@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import Header from "@/components/Header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -41,32 +42,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es">
+    <html lang="es" className="h-full overflow-x-hidden">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col h-full bg-black`}
       >
-        <header className="border-b sticky top-0 z-50 bg-black text-white border-white/10">
-          <div className="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between">
-            <a href="/" className="flex items-center gap-3">
-              <Image src="/arbtech-logo.png" alt="ArbTech" width={70} height={70} priority />
-              <span className="text-lg font-bold tracking-tight">ArbTech</span>
-            </a>
-            <nav className="flex flex-wrap items-center gap-2 sm:gap-4 text-base">
-              <a className="px-4 py-2 rounded-lg hover:bg-white/10 transition-colors font-medium" href="/">Inicio</a>
-              <a className="px-4 py-2 rounded-lg hover:bg-white/10 transition-colors font-medium" href="/servicios">Servicios</a>
-              <a className="px-4 py-2 rounded-lg hover:bg-white/10 transition-colors font-medium" href="/portfolio">Portfolio</a>
-              <a className="px-4 py-2 rounded-lg hover:bg-white/10 transition-colors font-medium" href="/nosotros">Nosotros</a>
-              <a className="px-4 py-2 rounded-lg hover:bg-white/10 transition-colors font-medium" href="/contacto">Contacto</a>
-            </nav>
-          </div>
-        </header>
-        <main className="mx-auto max-w-6xl px-6 py-10">
+        <Header />
+        <main className="flex-1 mx-auto max-w-6xl w-full px-4 sm:px-6 py-8 sm:py-10 pb-0">
           {children}
         </main>
-        <footer className="border-t border-foreground/10 py-8">
-          <div className="mx-auto max-w-6xl px-6 text-sm text-foreground/70 flex items-center justify-between">
+        <footer className="border-t border-foreground/10 py-6 sm:py-8 w-full bg-black">
+          <div className="mx-auto max-w-6xl w-full px-4 sm:px-6 text-xs sm:text-sm text-foreground/70 flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-0">
             <p>© {new Date().getFullYear()} ArbTech Studio. Todos los derechos reservados.</p>
-            <a className="hover:underline underline-offset-4" href="/contacto">Trabajemos juntos →</a>
+            <a className="hover:underline underline-offset-4 whitespace-nowrap" href="/contacto">Trabajemos juntos →</a>
           </div>
         </footer>
         <WhatsAppButton />

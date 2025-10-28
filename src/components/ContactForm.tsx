@@ -7,6 +7,7 @@ export default function ContactForm() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    phone: "",
     message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -36,6 +37,7 @@ export default function ContactForm() {
         {
           from_name: formData.name,
           from_email: formData.email,
+          from_phone: formData.phone,
           message: formData.message,
           to_name: "ArbTech Studio",
         },
@@ -43,7 +45,7 @@ export default function ContactForm() {
       );
 
       setSubmitStatus("success");
-      setFormData({ name: "", email: "", message: "" });
+      setFormData({ name: "", email: "", phone: "", message: "" });
     } catch (error) {
       console.error("Error sending email:", error);
       setSubmitStatus("error");
@@ -80,6 +82,17 @@ export default function ContactForm() {
           />
         </label>
       </div>
+      <label className="grid gap-1 text-sm">
+        <span>Teléfono</span>
+        <input
+          name="phone"
+          type="tel"
+          value={formData.phone}
+          onChange={handleChange}
+          className="px-3 py-2 rounded-md border border-foreground/15 bg-background"
+          placeholder="+54 9 351 123-4567"
+        />
+      </label>
       <label className="grid gap-1 text-sm">
         <span>Mensaje *</span>
         <textarea

@@ -8,10 +8,34 @@ export const metadata: Metadata = {
 
 export default function PortfolioPage() {
   const categories = [
-    { key: "todos", label: "Todos" },
-    { key: "arquitectura", label: "Arquitectura" },
-    { key: "interiores", label: "Interiores" },
-    { key: "automatizacion", label: "Automatización" },
+    { 
+      key: "arquitectura", 
+      label: "Arquitectura", 
+      href: "/arquitectura",
+      description: "Renders y proyectos arquitectónicos",
+      icon: "🏗️"
+    },
+    { 
+      key: "marketing", 
+      label: "Marketing Digital", 
+      href: "/marketing",
+      description: "Casos de éxito y estrategias digitales",
+      icon: "📱"
+    },
+    { 
+      key: "higiene", 
+      label: "Higiene y Seguridad", 
+      href: "/higiene-seguridad",
+      description: "Planes y auditorías de seguridad",
+      icon: "🛡️"
+    },
+    { 
+      key: "programacion", 
+      label: "Programación", 
+      href: "/programacion",
+      description: "Desarrollos y automatización",
+      icon: "⚡"
+    },
   ];
 
   return (
@@ -19,31 +43,27 @@ export default function PortfolioPage() {
       <header className="space-y-2">
         <h1 className="text-3xl font-semibold tracking-tight text-white">Portfolio</h1>
         <p className="text-white/70 max-w-2xl">
-          Selección de proyectos y exploraciones visuales. Filtro demostrativo
-          sin funcionalidad por ahora.
+          Explora nuestros trabajos por especialidad. Cada categoría te llevará 
+          a ver proyectos específicos con detalles y resultados.
         </p>
       </header>
 
-      <div className="flex flex-wrap gap-2">
-        {categories.map((c) => (
-          <button
-            key={c.key}
-            type="button"
-            className="px-3 py-1.5 rounded-full border border-white/20 text-white text-sm hover:bg-white/10"
+      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-2">
+        {categories.map((category) => (
+          <a
+            key={category.key}
+            href={category.href}
+            className="group relative overflow-hidden rounded-xl border border-white/20 bg-black text-white p-8 transition-all duration-300 hover:scale-105 hover:border-white/40"
           >
-            {c.label}
-          </button>
-        ))}
-      </div>
-
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {Array.from({ length: 6 }).map((_, i) => (
-          <figure
-            key={i}
-            className="aspect-[4/3] overflow-hidden rounded-lg border border-white/20 bg-white/5"
-          >
-            {/* Placeholder card */}
-          </figure>
+            <div className="space-y-4">
+              <div className="text-5xl mb-4">{category.icon}</div>
+              <h3 className="text-2xl font-semibold">{category.label}</h3>
+              <p className="text-white/70 text-sm">{category.description}</p>
+              <div className="flex items-center text-blue-400 group-hover:text-blue-300 transition-colors">
+                <span className="text-sm font-medium">Ver proyectos →</span>
+              </div>
+            </div>
+          </a>
         ))}
       </div>
     </section>

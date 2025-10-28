@@ -56,15 +56,13 @@ export default function ImageModal({
           </div>
 
           {/* Image Container */}
-          <div className="relative w-full max-h-[70vh] overflow-hidden rounded-lg flex items-center justify-center">
-            <Image
+          <div className="relative w-full max-h-[80vh] overflow-auto rounded-lg flex items-center justify-center bg-black/20">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
               src={images[currentIndex]}
               alt={`${projectTitle} - Imagen ${currentIndex + 1}`}
-              width={800}
-              height={600}
-              sizes="(max-width: 1024px) 100vw, 80vw"
-              className="object-contain max-w-full max-h-full"
-              priority
+              className="max-w-full h-auto max-h-[80vh] object-contain"
+              style={{ width: 'auto', height: 'auto' }}
             />
           </div>
 
