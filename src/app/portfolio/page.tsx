@@ -15,6 +15,13 @@ export default function PortfolioPage() {
       description: "Renders y proyectos arquitectónicos",
       icon: "🏗️"
     },
+    {
+      key: "diseno-interior",
+      label: "Diseño interior",
+      href: "/diseno-interior",
+      description: "Interiores y ambientaciones",
+      icon: "🛋️",
+    },
     { 
       key: "marketing", 
       label: "Marketing Digital", 

@@ -30,6 +30,7 @@ export default function ServiciosPage() {
             title: "Diseño interior",
             desc:
               "Transformamos tus espacios en ambientes únicos y funcionales.",
+            href: "/diseno-interior",
           },
           {
             title: "Programación / Automatización",

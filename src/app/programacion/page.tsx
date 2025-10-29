@@ -50,22 +50,22 @@ export default function ProgramacionPage() {
       images: ["/riverasgestion/sistemawebriverasgestion.png", "/riverasgestion/sistemawebriverasdelsuquia.png", "/riverasgestion/paneladminriveraswebgestion.png"]
     },
     { 
-      src: "/arbtech-logo.png", 
-      alt: "Automatización Inventario", 
-      category: "Automatización",
-      images: ["/arbtech-logo.png", "/arbtech-logo.png", "/arbtech-logo.png"]
+      src: "/CongresoCoop/congresocooperativas.png", 
+      alt: "Plataforma Congreso Cooperativas", 
+      category: "Congreso Cooperativas",
+      images: ["/CongresoCoop/congresocooperativas.png", "/CongresoCoop/congresocooperativas2.png", "/CongresoCoop/congresocooperativas3.png"]
     },
     { 
-      src: "/arbtech-logo.png", 
-      alt: "App Móvil", 
-      category: "Mobile",
-      images: ["/arbtech-logo.png", "/arbtech-logo.png", "/arbtech-logo.png"]
+      src: "public/riverasdelsuquia/riverasdelsuquia1.png", 
+      alt: "Riveras Del Suquía", 
+      category: "Pagina Web",
+      images: ["/riverasdelsuquia/riverasdelsuquia2.png", "/riverasdelsuquia/riverasdelsuquia1.png", "/riverasdelsuquia/riveras3.png"]
     },
     { 
-      src: "/arbtech-logo.png", 
-      alt: "Integración ERP", 
-      category: "Integración",
-      images: ["/arbtech-logo.png", "/arbtech-logo.png", "/arbtech-logo.png"]
+      src: "/riverasdelsuquia/coopyme/coopyme1.png", 
+      alt: "Coopyme", 
+      category: "Pagina Web",
+      images: ["/riverasdelsuquia/coopyme/coopyme1.png", "/riverasdelsuquia/coopyme/coopyme2.png", "/riverasdelsuquia/coopyme/coopyme3.png"]
     }
   ];
 
