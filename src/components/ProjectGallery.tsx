@@ -9,6 +9,7 @@ interface Project {
   alt: string;
   category: string;
   images: string[]; // Array de 3 imágenes
+  background?: "white" | "black";
 }
 
 interface ProjectGalleryProps {
@@ -61,7 +62,9 @@ export default function ProjectGallery({ projects }: ProjectGalleryProps) {
             
             {/* Imagen principal */}
             <figure
-              className="relative aspect-[4/3] overflow-hidden rounded-lg border border-white/20 bg-black group cursor-pointer"
+              className={`relative aspect-[4/3] overflow-hidden rounded-lg border border-white/20 ${
+                project.background === "white" ? "bg-white" : "bg-black"
+              } group cursor-pointer`}
               onClick={() => openModal(project, 0)}
             >
               <Image
@@ -81,7 +84,9 @@ export default function ProjectGallery({ projects }: ProjectGalleryProps) {
               {project.images.slice(1).map((image, imgIndex) => (
                 <figure
                   key={imgIndex}
-                  className="relative aspect-[4/3] w-16 overflow-hidden rounded border border-white/20 bg-black cursor-pointer"
+                  className={`relative aspect-[4/3] w-16 overflow-hidden rounded border border-white/20 ${
+                    project.background === "white" ? "bg-white" : "bg-black"
+                  } cursor-pointer`}
                   onClick={() => openModal(project, imgIndex + 1)}
                 >
                   <Image
@@ -109,6 +114,7 @@ export default function ProjectGallery({ projects }: ProjectGalleryProps) {
           onPrev={prevImage}
           onGoToImage={goToImage}
           projectTitle={currentProject.alt}
+          background={currentProject.background}
         />
       )}
     </>

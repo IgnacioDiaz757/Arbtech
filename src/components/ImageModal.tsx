@@ -13,6 +13,7 @@ interface ImageModalProps {
   onPrev: () => void;
   onGoToImage: (index: number) => void;
   projectTitle: string;
+  background?: "white" | "black";
 }
 
 export default function ImageModal({ 
@@ -23,7 +24,8 @@ export default function ImageModal({
   onNext, 
   onPrev, 
   onGoToImage,
-  projectTitle 
+  projectTitle,
+  background = "black"
 }: ImageModalProps) {
 
   if (!isOpen) return null;
@@ -56,7 +58,7 @@ export default function ImageModal({
           </div>
 
           {/* Image Container */}
-          <div className="relative w-full max-h-[80vh] overflow-auto rounded-lg flex items-center justify-center bg-black/20">
+          <div className={`relative w-full max-h-[80vh] overflow-auto rounded-lg flex items-center justify-center ${background === "white" ? "bg-white" : "bg-black/20"}`}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={images[currentIndex]}

@@ -58,16 +58,58 @@ export default function DisenoInteriorPage() {
   // Usamos imágenes locales existentes para evitar dominios externos
   const projects = [
     {
-      src: "/globe.svg",
-      alt: "Living contemporáneo",
+      src: "/renders/render interior 02.jpg",
+      alt: "Interior Vivienda",
       category: "Residencial",
-      images: ["/globe.svg", "/window.svg", "/file.svg"],
+      images: [
+        "/renders/render interior 02.jpg",
+        "/renders/render interior.jpg",
+        "/renders/renfer fachada.jpg",
+      ],
     },
     {
-      src: "/window.svg",
-      alt: "Oficina minimalista",
-      category: "Comercial",
-      images: ["/window.svg", "/file.svg", "/globe.svg"],
+      src: "/interior/skp diseño 13.jpg",
+      alt: "Escalera Planta Baja",
+      category: "Escalera Planta Baja",
+      images: [
+        "/interior/skp diseño 13.jpg",
+        "/interior/skp diseño 15.jpg",
+        "/interior/Imagen1.png",
+      ],
+      background: "white" as const,
+    },
+    {
+      src: "/interior/1.jpg",
+      alt: "vivienda 155",
+      category: "vivienda",
+      images: [
+        "/interior/1.jpg",
+        "/interior/2.jpg",
+        "/interior/3.jpg",
+      ],
+      background: "white" as const,
+    },
+    {
+      src: "/interior/img13 (2).jpg",
+      alt: "Interior Vivienda 149",
+      category: "Interior",
+      images: [
+        "/interior/img11 (2).jpg",
+        "/interior/img12 (3).jpg",
+        "/interior/img13 (2).jpg",
+      ],
+      background: "white" as const,
+    },
+    {
+      src: "/interior/interior4.jpg",
+      alt: "vivienda 143",
+      category: "Interior",
+      images: [
+        "/interior/interior4.jpg",
+        "/interior/interior5.jpg",
+        "/interior/interior6.jpg",
+      ],
+      background: "white" as const,
     },
   ];
 

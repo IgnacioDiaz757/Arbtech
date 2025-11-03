@@ -77,7 +77,7 @@ export default function Home() {
             href="/marketing"
           />
           <HighlightedService
-            title="Programación & Automatización"
+            title="Programación"
             description="Sistemas inteligentes que optimizan procesos y mejoran la eficiencia de tu negocio."
             icon="⚡"
             index={2}
